@@ -1,0 +1,28 @@
+    body {
+	       font-family: "Times New Roman", Times, serif;
+		   background-image: url('mybg.jpg');
+           background-repeat: repeat-y;
+		   margin:0;
+		   padding:0;
+		}
+		
+	.container {
+		   background-color: #FFDBE5;
+		   border-radius: 20px;
+		   margin: 100px auto;
+		   padding: 50px;
+		   max-width: 1000px;
+		}
+		
+	legend { background-color: #EA9AB2;
+		    border: none;
+			padding: 10px 20px;
+		   }
+		
+	input:hover { background-color: #E27396;
+	              border: none;
+				}
+		
+	h1 { text-align: center;}
+		
+	

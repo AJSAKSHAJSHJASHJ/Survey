@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+	<link href="survey.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <form action="mailto:gorne.162504140044@depedqc.ph" method="get" enctype="text/plain">
+        <h1>JavaScript Game Pilot Testing Student Survey</h1>
+        <p>Thank you for playing the pilot testing version of our game! Now, please feel free to proceed to answer this survey for your feedback!</p>
+        <hr>
+        <ul>
+            <li>General Information</li>
+            <hr>
+            <fieldset>
+                <legend>Name:</legend>
+                <input type="text" id="namef" placeholder="Your Name" name="name">
+            </fieldset>
+            <fieldset>
+                <legend>Grade/Year Level</legend>
+                <select id="grade" required>
+                    <option value="" selected disabled>Please select here</option>
+                    <option value="g7">Grade 7</option>
+                    <option value="g8">Grade 8</option>
+                    <option value="g9">Grade 9</option>
+                    <option value="g10">Grade 10</option>
+                    <option value="g11">Grade 11</option>
+                    <option value="g12">Grade 12</option>
+                </select>
+            </fieldset>
+            <fieldset required>
+                <legend>How often do you play video games?</legend>
+                <input type="radio" id="rare">Rarely<br>
+                <input type="radio" id="occas">Occasionally<br>
+                <input type="radio" id="regu">Regular<br>
+                <input type="radio" id="veryf">Very Frequently
+            </fieldset>
+            <hr>
+            <li>Game Experience</li>
+            <hr>
+            <fieldset>
+                <legend>How would you rate the overall enjoyment of the game?</legend>
+                <input type="radio" id="exce">Excellent<br>
+                <input type="radio" id="good">Good<br>
+                <input type="radio" id="neut">Neutral<br>
+                <input type="radio" id="fair">Fair<br>
+                <input type="radio" id="poor">Poor
+            </fieldset>
+            <fieldset>
+                <legend>What aspects of the game did you find most enjoyable?</legend>
+                <input type="checkbox" id="gamep">Gameplay<br>
+                <input type="checkbox" id="gandv">Graphics and Visuals<br>
+                <input type="checkbox" id="sound">Sound Effects and Music<br>
+                <input type="checkbox" id="story">Storyline<br>
+                <input type="checkbox" id="chal">Challenges and Difficulty Level<br>
+                Other:<br><textarea id="oth" cols="40" rows="10" placeholder="Type here..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Were there any specific features or aspects of the game that you found frustrating or confusing?</legend>
+                <textarea id="prob" cols="40" rows="10" placeholder="Type here..."></textarea>
+            </fieldset>
+            <hr>
+            <li>Technical Feedback</li>
+            <hr>
+            <fieldset>
+                <legend>Did you encounter any technical issues while playing the game? (eg., bugs, glitches, crashes)</legend>
+                <input type="radio" id="yes">Yes<br>
+                <input type="radio" id="no">No<br>
+            </fieldset>
+            <fieldset>
+                <legend>If yes, please describe the technical issues you encountered: </legend>
+                <textarea id="issue" cols="40" rows="10" placeholder="Type here..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>On which device(s) did you play the game?</legend>
+                <input type="checkbox" id="comp">Desktop Computer<br>
+                <input type="checkbox" id="lapt">Laptop<br>
+                <input type="checkbox" id="smart">Smartphone<br>
+                <input type="checkbox" id="tab">Tablet<br>
+                Other (Please specify):<br><textarea id="devi" cols="40" rows="10" placeholder="Type here..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Which web browser(s) did you use to play the game?</legend>
+                <input type="checkbox" id="goog">Google Chrome<br>
+                <input type="checkbox" id="moz">Mozilla Firefox<br>
+                <input type="checkbox" id="saff">Saffari<br>
+                <input type="checkbox" id="micro">Microsoft Edge<br>
+                Other(Please specify):<br><textarea id="web" cols="40" rows="10" placeholder="Type here..."></textarea>
+            </fieldset>
+            <hr>
+            <li>Gameplay Experience</li>
+            <hr>
+            <fieldset>
+                <legend>How challenging did you find the game?</legend>
+                <input type="radio" id="veasy">Very Easy<br>
+                <input type="radio" id="easy">Easy<br>
+                <input type="radio" id="mode">Moderate<br>
+                <input type="radio" id="diff">Difficult<br>
+                <input type="radio" id="vdiff">Very Difficult
+            </fieldset>
+            <fieldset>
+                <legend>Were the game instructions clear and easy to understand?</legend>
+                <input type="radio" id="y">Yes<br>
+                <input type="radio" id="n">No<br>
+                <input type="radio" id="some">Somewhat
+            </fieldset>
+            <fieldset>
+                <legend>What additional features or improvements would you suggest for the game?</legend>
+                <textarea id="sugg" cols="40" rows="10" placeholder="Type here..."></textarea>
+            </fieldset>
+            <hr>
+            <li>Overall Feedback</li>
+            <hr>
+            <fieldset>
+                <legend>On a scale of 1 to 10, how likely are you going to play this game again?</legend>
+                <p>1(Not Likely) - 10(Very Likely)</p>
+                <input type="range" min="1" max="10" value="5" id="slider">
+                <p id="slval">5</p>
+            </fieldset>
+            <fieldset>
+                <legend>Would you recommend this game to your friends or classmates?</legend>
+                <input type="radio" id="ye">Yes<br>
+                <input type="radio" id="nop">No<br>
+                <input type="radio" id="mayb">Maybe
+            </fieldset>
+            <fieldset>
+                <legend>Any other comments or suggestions for the game developers?</legend>
+                <textarea id="comm" cols="40" rows="10" placeholder="Type here..."></textarea>
+            </fieldset>
+        </ul>
+        <input type="hidden" name="subject" value="Contact_Form_Submission">
+        <input type="hidden" name="body" id="body">
+        <input type="submit" value="Submit" id="submit">
+        <input type="reset" value="Reset" id="reset">
+    </form>
+    <script src="survey.js"></script>
+	<div class="container">
+</body>
+</html> 
